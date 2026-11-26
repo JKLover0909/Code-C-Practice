@@ -5,14 +5,14 @@ Code-C-Practice là bộ bài tập lập trình C/C++ môn Tin học cơ sở (
 
 ## Cấu trúc
 - Thư mục gốc gần như phẳng (~212 file `.cpp`); file nháp đã gom vào `nhap/`. Không có Makefile/CMake/test.
-- Tên file: mã bài PTIT dạng `CPPxxxx.cpp` (vd `CPP0104.cpp` tính tổng 1/i) hoặc tên không dấu theo đề (`songuyento.cpp`, `hoanvi.cpp`, `tamgiacso1.cpp`...); file nháp (`Untitled*.cpp`, `Untitled4.c`, `test.cpp`, `xx*.cpp`, `hihi.cpp`) nằm trong `nhap/`. `CPP0139.cpp` đang rỗng.
+- Tên file: mã bài PTIT dạng `CPPxxxx.cpp` nằm trong `ptit/` (vd `ptit/CPP0104.cpp` tính tổng 1/i) hoặc tên không dấu theo đề (`songuyento.cpp`, `hoanvi.cpp`, `tamgiacso1.cpp`...); file nháp (`Untitled*.cpp`, `Untitled4.c`, `test.cpp`, `xx*.cpp`, `hihi.cpp`) nằm trong `nhap/`. `ptit/CPP0139.cpp` đang rỗng.
 - Chủ đề: số học (nguyên tố, ước/bội, số hoàn hảo, Fibonacci), xử lý mảng/ma trận, xâu ký tự, hình vẽ bằng ký tự, hoán vị/quay lui, khai báo lớp (sinh viên, nhân viên, phân số, kho hàng, danh sách phim...).
 - `DATA.txt` — dữ liệu mẫu cho một vài bài đọc từ file.
 - Một file có tên chứa dấu cách/ký tự Unicode (`Quản lý kho hàng.cpp`, `Game ban sung vao bia.cpp`, `so smith.cpp`...) — cẩn thận khi dùng shell.
 
 ## Biên dịch và chạy
 ```bash
-g++ -std=c++17 -O2 CPP0104.cpp -o CPP0104
+g++ -std=c++17 -O2 ptit/CPP0104.cpp -o CPP0104
 echo 3 | ./CPP0104
 ```
 Nhiều bài dùng `#include <bits/stdc++.h>` (chỉ GCC/Clang, không chạy trên MSVC).
